@@ -1,0 +1,32 @@
+html.full,
+html.full body {
+  width: 100%;
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  font-family: "Nunito", "Noto Sans KR", sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+.material-icons,
+.material-icons-outlined {
+  vertical-align: middle;
+  font-size: inherit;
+}
+
+html.app-hybrid,
+html.app-hybrid body {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+}

@@ -47,7 +47,7 @@ html.full body {
             display: block;
             color: white;
             text-decoration: none;
-            padding-left: 10px;
+            padding-left: 50px;
             padding-bottom: 10px;
           }
         }
@@ -56,34 +56,158 @@ html.full body {
   }
 
   .home {
-    background-image: url("./images/home1.png");
-    background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
-    height: 800px;
+    height: calc(100vh - 40px); // header height: 40px;
     position: relative;
+    top: 40px;
     overflow: hidden;
 
     .scene {
+      position: absolute;
       display: flex;
-      position: relative;
-      top: 10px;
-      width: 100%;
-      height: 70%;
       justify-content: center;
-      align-items: center;
-      //background-color: aqua;
+      width: 60%;
+      height: 100%;
+      left: 20%;
+
+      .back {
+        width: 1350px;
+        height: 750px;
+      }
+
       .inner {
         position: absolute;
-        top: 103px;
-        width: 762px;
-        height: 404px;
-        background-color: pink;
-
+        display: flex;
+        justify-content: center;
         .firstScene {
-          width: 100%;
-          height: 100%;
+          position: relative;
+          top: 92px;
+          left: 0;
+          width: 748px;
+          height: 400px;
         }
+      }
+    }
+
+    .skills {
+      font-size: 20px;
+
+      .s1 {
+        position: absolute;
+        width: 20%;
+        left: 0;
+        height: 100%;
+      }
+
+      .s2 {
+        position: absolute;
+        width: 20%;
+        right: 0;
+        height: 100%;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+
+
+      .floating-one {
+        animation-name: floating-one;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+
+      .floating-two {
+        animation-name: floating-two;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes floating-one {
+        0% {
+          transform: translate(0, 0px);
+        }
+        50% {
+          transform: translate(0, 5px);
+        }
+        100% {
+          transform: translate(0, -0px);
+        }
+      }
+
+      @keyframes floating-two {
+        0% {
+          transform: translate(0, 10px);
+        }
+        50% {
+          transform: translate(0, 5px);
+        }
+        100% {
+          transform: translate(0, 10px);
+        }
+      }
+
+      .one {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+      }
+
+      .two {
+        position: absolute;
+        top: 190px;
+        right: 20px;
+      }
+
+      .three {
+        position: absolute;
+        top: 330px;
+        left: 20px;
+      }
+
+      .four {
+        position: absolute;
+        top: 470px;
+        right: 20px;
+      }
+
+      .five {
+        position: absolute;
+        top: 610px;
+        left: 20px;
+      }
+
+      .six {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+      }
+
+      .seven {
+        position: absolute;
+        top: 150px;
+        left: 20px;
+      }
+
+      .eight {
+        position: absolute;
+        top: 280px;
+        right: 20px;
+      }
+
+      .nine {
+        position: absolute;
+        top: 410px;
+        left: 20px;
+      }
+
+      .ten {
+        position: absolute;
+        top: 640px;
+        right: 20px;
       }
     }
 

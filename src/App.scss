@@ -7,48 +7,48 @@ html.full body {
 
 .App {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
   .app-header{
     position: fixed;
+    display: flex;
     overflow: hidden;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1;
-    width: 100%;
-    height: 40px;
+    min-height: 2.5rem;
     background-color: #000;
-    .navbar {
+
+    .logo {
       position: relative;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      right: 0;
-      .logo {
-        position: absolute;
-        left: 10%;
-        .img {
-          width: 50%;
-          height: 100%;
-        }
+      left: 15rem;
+      .img {
+        width: 5rem;
+        height: 2.5rem;
       }
+    }
+
+    .menu-wrap {
+      position: relative;
+      left: 35rem;
+      padding: 0;
+      margin: 0;
       .menu {
-        position: absolute;
-        right: 10%;
-        margin-bottom: 10%;
         list-style-type: none;
         display: flex;
+
         li {
-          position: relative;
-          align-items: center;
+          font-size: 0.8rem;
           .each {
-            font-size: 15px;
-            display: block;
             color: white;
             text-decoration: none;
-            padding-left: 50px;
-            padding-bottom: 10px;
+            padding-left: 5rem;
           }
         }
       }
@@ -57,60 +57,62 @@ html.full body {
 
   .home {
     width: 100%;
-    height: calc(100vh - 40px); // header height: 40px;
+    height: 100vh;
     position: relative;
-    top: 40px;
     overflow: hidden;
-
+    display: flex;
     .scene {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      width: 60%;
-      height: 100%;
-      left: 20%;
+      position: relative;
+      width: 60rem;
+      height: 50rem;
 
       .back {
-        width: 1350px;
-        height: 750px;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        top: 5rem;
+        height: 45rem;
       }
 
       .inner {
-        position: absolute;
+        position: relative;
         display: flex;
+        padding: 0;
+        margin: 0;
         justify-content: center;
-        .firstScene {
+        .firstScene, .secondScene {
           position: relative;
-          top: 92px;
+          bottom: 45rem;
           left: 0;
-          width: 748px;
-          height: 400px;
+          width: 100%;
+          height: 45rem;
+        }
+
+        .secondScene {
+          .img {
+            position: absolute;
+            width: 10em;
+            height: 12em;
+            top: calc((45rem - 12em) / 2);
+            left: 8em;
+          }
         }
       }
     }
 
-    .skills {
-      font-size: 20px;
+    .s1 {
+      left: 0;
+    }
 
-      .s1 {
-        position: absolute;
-        width: 20%;
-        left: 0;
-        height: 100%;
-      }
+    .s2 {
+      right: 0;
+    }
 
-      .s2 {
-        position: absolute;
-        width: 20%;
-        right: 0;
-        height: 100%;
-      }
-
-      img {
-        width: 100px;
-        height: 100px;
-      }
-
+    .s1, .s2 {
+      position: relative;
+      width: calc((100% - 60rem)/2);
+      height: 100%;
 
       .floating-one {
         animation-name: floating-one;
@@ -150,66 +152,71 @@ html.full body {
         }
       }
 
-      .one {
+      .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
         position: absolute;
-        top: 50px;
-        left: 20px;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        width: 6rem;
+        height: 6rem;
+
+        img {
+          padding: 0;
+          margin: 0;
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+
+      .one {
+        top: 4em;
+        right: 8em;
       }
 
       .two {
-        position: absolute;
-        top: 190px;
-        right: 20px;
+        top: 12em;
+        right: 1em;
       }
 
       .three {
-        position: absolute;
-        top: 330px;
-        left: 20px;
+        top: 20em;
+        right: 8em;
       }
 
       .four {
-        position: absolute;
-        top: 470px;
-        right: 20px;
+        top: 28em;
+        right: 1em;
       }
 
       .five {
-        position: absolute;
-        top: 610px;
-        left: 20px;
+        top: 36em;
+        right: 8em;
       }
 
       .six {
-        position: absolute;
         top: 30px;
-        right: 20px;
+        left: 1em;
       }
 
       .seven {
-        position: absolute;
         top: 150px;
-        left: 20px;
+        left: 8em;
       }
 
       .eight {
-        position: absolute;
         top: 280px;
-        right: 20px;
+        left: 1em;
       }
 
       .nine {
-        position: absolute;
         top: 410px;
-        left: 20px;
+        left: 8em;
       }
 
       .ten {
-        position: absolute;
         top: 640px;
-        right: 20px;
+        left: 1em;
       }
     }
-
   }
 }

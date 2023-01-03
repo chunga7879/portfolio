@@ -4,11 +4,11 @@ import {Link} from "react-router-dom";
 
 export function Header() {
     return (
-        <div className="app-header">
-            <div className="navbar">
-                <a href="/" className="logo">
-                    <img src={logo} className="img" alt="logo image" />
-                </a>
+        <header className="app-header">
+            <a href="/" className="logo">
+                <img src={logo} className="img" alt="logo image" />
+            </a>
+            <div className="menu-wrap">
                 <ul className="menu">
                     <li>
                         <Link to="./education" className="each">Education</Link>
@@ -24,7 +24,8 @@ export function Header() {
                     </li>
                 </ul>
             </div>
-        </div>
+
+        </header>
     );
 }
 

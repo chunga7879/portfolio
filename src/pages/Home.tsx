@@ -11,31 +11,35 @@ import NodeJS from "../images/NodeJS.png";
 import OpenGL from "../images/OpenGL.png";
 import Python from "../images/Python.png";
 import Unity from "../images/Unity.png";
+import {useState} from "react";
 
 
 export default function Home() {
+    const [page, setPage] = useState(1);
+
     return (
         <div className="home">
+            <div className="s1">
+                <div className="floating-one one"><img src={Java} alt="java logo" /></div>
+                <div className="floating-two two"><img src={Javascript} alt="javascript logo" /></div>
+                <div className="floating-one three"><img src={React} alt="react logo" /></div>
+                <div className="floating-two four"><img src={HTML} alt="html logo" /></div>
+                <div className="floating-one five"><img src={CSS} alt="CSS logo" /></div>
+            </div>
             <div className="scene">
                 <img src={home1} alt="computer" className="back" />
-                <FirstScene />
-
+                {page == 0 &&  <FirstScene />}
+                {page == 1 &&  <SecondScene />}
+                {page == 2 &&  <ThirdScene />}
+                {page == 3 &&  <FourthScene />}
             </div>
-            <div className="skills">
-                <div className="s1">
-                    <div className="floating-one one"><img src={Java} alt="java logo" /></div>
-                    <div className="floating-two two"><img src={Javascript} alt="javascript logo" /></div>
-                    <div className="floating-one three"><img src={React} alt="react logo" /></div>
-                    <div className="floating-two four"><img src={HTML} alt="html logo" /></div>
-                    <div className="floating-one five"><img src={CSS} alt="CSS logo" /></div>
-                </div>
-                <div className="s2">
-                    <div className="floating-one six"><img src={Unity} alt="unity logo" /></div>
-                    <div className="floating-two seven"><img src={Python} alt="python logo" /></div>
-                    <div className="floating-one eight"><h3>C/C++</h3></div>
-                    <div className="floating-two nine"><img src={MySQL} alt="mySQL logo" /></div>
-                    <div className="floating-one ten"><img src={OpenGL} alt="openGL logo" /></div>
-                </div>
+
+            <div className="s2">
+                <div className="floating-one six"><img src={Unity} alt="unity logo" /></div>
+                <div className="floating-two seven"><img src={Python} alt="python logo" /></div>
+                <div className="floating-one eight"><h3>C/C++</h3></div>
+                <div className="floating-two nine"><img src={MySQL} alt="mySQL logo" /></div>
+                <div className="floating-one ten"><img src={OpenGL} alt="openGL logo" /></div>
             </div>
         </div>
     );
@@ -52,14 +56,14 @@ function FirstScene() {
 function SecondScene() {
     return (
         <div className="inner">
-            <div className="image">
+            <div className="secondScene">
                 <img src={chunga} className="img" alt="chunga's image" />
-            </div>
-            <div className="info">
-                <h1>Basic info</h1>
-                <p>Email: chunga7879@gmail.com</p>
-                <p>Github: https://github.com/chunga7879</p>
-                <p>Phone: 778-873-8528</p>
+                <div className="info">
+                    <h1>Basic info</h1>
+                    <p>Email: chunga7879@gmail.com</p>
+                    <p>Github: https://github.com/chunga7879</p>
+                    <p>Phone: 778-873-8528</p>
+                </div>
             </div>
         </div>
     )

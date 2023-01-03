@@ -12,10 +12,23 @@ import OpenGL from "../images/OpenGL.png";
 import Python from "../images/Python.png";
 import Unity from "../images/Unity.png";
 import {useState} from "react";
+import {CiCircleChevLeft, CiCircleChevRight} from "react-icons/ci";
 
 
 export default function Home() {
-    const [page, setPage] = useState(1);
+    const [page, setPage] = useState(0);
+
+    const onClickPrev = () => {
+        if (page > 0) {
+            setPage(page - 1);
+        }
+    }
+
+    const onClickNext = () => {
+        if (page < 1) {
+            setPage(page + 1);
+        }
+    }
 
     return (
         <div className="home">
@@ -30,10 +43,13 @@ export default function Home() {
                 <img src={home1} alt="computer" className="back" />
                 {page == 0 &&  <FirstScene />}
                 {page == 1 &&  <SecondScene />}
-                {page == 2 &&  <ThirdScene />}
-                {page == 3 &&  <FourthScene />}
+                {/*{page == 2 &&  <ThirdScene />}*/}
+                {/*{page == 3 &&  <FourthScene />}*/}
+                <div className="icons">
+                    <CiCircleChevLeft className="icon1" onClick={onClickPrev}/>
+                    <CiCircleChevRight className="icon2" onClick={onClickNext} />
+                </div>
             </div>
-
             <div className="s2">
                 <div className="floating-one six"><img src={Unity} alt="unity logo" /></div>
                 <div className="floating-two seven"><img src={Python} alt="python logo" /></div>
@@ -48,7 +64,7 @@ export default function Home() {
 function FirstScene() {
     return (
         <div className="inner">
-            <img src={home2} alt="home image 2" className="firstScene"/>
+            <img src={home2} alt="home image 2" className="subScene first"/>
         </div>
     )
 }
@@ -56,12 +72,12 @@ function FirstScene() {
 function SecondScene() {
     return (
         <div className="inner">
-            <div className="secondScene">
+            <div className="subScene second">
                 <img src={chunga} className="img" alt="chunga's image" />
                 <div className="info">
-                    <h1>Basic info</h1>
+                    <h1>Basic Info</h1>
                     <p>Email: chunga7879@gmail.com</p>
-                    <p>Github: https://github.com/chunga7879</p>
+                    <p>Github: <a href="https://github.com/chunga7879">https://github.com/chunga7879</a></p>
                     <p>Phone: 778-873-8528</p>
                 </div>
             </div>
@@ -69,35 +85,35 @@ function SecondScene() {
     )
 }
 
-function ThirdScene() {
-    return (
-        <div className="inner">
-            <div className="intro">
-                <div className="one">
-                    <h1>WHO I AM?</h1>
-                    <p></p>
-                </div>
-                <div className="two">
-                    <h1>HOW I WORKED?</h1>
-                    <p></p>
-                </div>
-                <div className="three">
-                    <h1>WHAT I AM LOOKING FORWARD?</h1>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    )
-}
+// function ThirdScene() {
+//     return (
+//         <div className="inner">
+//             <div className="intro">
+//                 <div className="one">
+//                     <h1>WHO I AM?</h1>
+//                     <p></p>
+//                 </div>
+//                 <div className="two">
+//                     <h1>HOW I WORKED?</h1>
+//                     <p></p>
+//                 </div>
+//                 <div className="three">
+//                     <h1>WHAT I AM LOOKING FORWARD?</h1>
+//                     <p></p>
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
 
-function FourthScene() {
-    return (
-        <div className="inner">
-            <h1>What "ATTENTION" means?</h1>
-            <h2>To be a person who can</h2>
-            <p>Give Attention</p>
-            <p>Get Attention</p>
-            <p>To someone else</p>
-        </div>
-    )
-}
+// function FourthScene() {
+//     return (
+//         <div className="inner">
+//             <h1>What "ATTENTION" means?</h1>
+//             <h2>To be a person who can</h2>
+//             <p>Give Attention</p>
+//             <p>Get Attention</p>
+//             <p>To someone else</p>
+//         </div>
+//     )
+// }

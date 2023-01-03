@@ -5,6 +5,15 @@ html.full body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
 .App {
   position: relative;
   display: flex;
@@ -55,6 +64,69 @@ html.full body {
     }
   }
 
+  .scene {
+    position: relative;
+    width: 60rem;
+    height: 50rem;
+
+    .icons {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      z-index: 3;
+      bottom: 52.5rem;
+      color: white;
+      font-size: 4em;
+      .icon1 {
+        padding-right: 1em;
+      }
+      .icon2 {
+        padding-left: 1em;
+      }
+    }
+
+    .back {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      top: 5rem;
+      height: 45rem;
+    }
+
+    .inner {
+      position: relative;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+
+      .subScene {
+        position: relative;
+        bottom: 45rem;
+        left: 0;
+        width: 100%;
+        height: 45rem;
+      }
+    }
+  }
+
+  .s1, .s2 {
+    position: relative;
+    width: calc((100% - 60rem) / 2);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .s1 {
+    left: 0;
+  }
+
+  .s2 {
+    right: 0;
+  }
+
   .home {
     width: 100%;
     height: 100vh;
@@ -62,58 +134,34 @@ html.full body {
     overflow: hidden;
     display: flex;
     .scene {
-      position: relative;
-      width: 60rem;
-      height: 50rem;
-
-      .back {
-        position: relative;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        top: 5rem;
-        height: 45rem;
-      }
-
       .inner {
-        position: relative;
-        display: flex;
-        padding: 0;
-        margin: 0;
-        justify-content: center;
-        .firstScene, .secondScene {
-          position: relative;
-          bottom: 45rem;
-          left: 0;
-          width: 100%;
-          height: 45rem;
-        }
-
-        .secondScene {
+        .second {
           .img {
             position: absolute;
-            width: 10em;
+            width: 13em;
+            height: 15em;
+            top: calc((45rem - 20em) / 2);
+            left: 12em;
+          }
+          .info {
+            font-size: 1em;
+            position: absolute;
             height: 12em;
-            top: calc((45rem - 12em) / 2);
-            left: 8em;
+            top: 10em;
+            left: 30em;
+            h1 {
+              padding-bottom: 1em;
+            }
+
+            p {
+              padding-left: 2em;
+            }
           }
         }
       }
     }
 
-    .s1 {
-      left: 0;
-    }
-
-    .s2 {
-      right: 0;
-    }
-
     .s1, .s2 {
-      position: relative;
-      width: calc((100% - 60rem)/2);
-      height: 100%;
-
       .floating-one {
         animation-name: floating-one;
         animation-duration: 7s;
@@ -216,6 +264,33 @@ html.full body {
       .ten {
         top: 640px;
         left: 1em;
+      }
+    }
+  }
+
+  .education {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+    .scene {
+      .inner {
+        .first {
+          img {
+            position: absolute;
+            top: 10em;
+            left: 3em;
+            width: 30em;
+            height: 8em;
+          }
+          .info {
+            position: absolute;
+            top: 18em;
+            left: 20em;
+          }
+        }
       }
     }
   }

@@ -53,7 +53,7 @@ export default function Home() {
             <div className="s2">
                 <div className="floating-one six"><img src={Unity} alt="unity logo" /></div>
                 <div className="floating-two seven"><img src={Python} alt="python logo" /></div>
-                <div className="floating-one eight"><h3>C/C++</h3></div>
+                <div className="floating-one eight"><h1>C/C++</h1></div>
                 <div className="floating-two nine"><img src={MySQL} alt="mySQL logo" /></div>
                 <div className="floating-one ten"><img src={OpenGL} alt="openGL logo" /></div>
             </div>

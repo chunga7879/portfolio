@@ -10,6 +10,18 @@ a {
   color: black;
 }
 
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
 a:hover {
   font-weight: bold;
 }
@@ -32,7 +44,7 @@ a:hover {
     left: 0;
     z-index: 1;
     min-height: 2.5rem;
-    background-color: #000;
+    background-color: #222021;
 
     .logo {
       position: relative;
@@ -73,9 +85,10 @@ a:hover {
       position: relative;
       display: flex;
       justify-content: center;
-      z-index: 3;
-      bottom: 52.5rem;
+      z-index: 100;
+      bottom: 39rem;
       color: white;
+      margin-top: 0.4em;
       font-size: 4em;
       .icon1 {
         padding-right: 1em;
@@ -92,6 +105,7 @@ a:hover {
       width: 100%;
       top: 5rem;
       height: 45rem;
+      z-index: 5;
     }
 
     .inner {
@@ -100,13 +114,15 @@ a:hover {
       padding: 0;
       margin: 0;
       justify-content: center;
+      bottom: 39rem;
+      height: 30rem;
+      width: 95%;
+      left: 1.5em;
 
       .subScene {
         position: relative;
-        bottom: 45rem;
-        left: 0;
         width: 100%;
-        height: 45rem;
+        height: 100%;
       }
     }
   }
@@ -135,20 +151,30 @@ a:hover {
     display: flex;
     .scene {
       .inner {
+        .first {
+          width: 100%;
+          height: 100%;
+          background: blanchedalmond;
+        }
         .second {
+          background: white;
           .img {
             position: absolute;
-            width: 13em;
-            height: 15em;
-            top: calc((45rem - 20em) / 2);
-            left: 12em;
+            width: 20em;
+            height: 24em;
+            top: calc((30rem - 24em) / 2);
+            left: calc((50% - 20em) / 2);
           }
           .info {
-            font-size: 1em;
+            background: blanchedalmond;
             position: absolute;
-            height: 12em;
-            top: 10em;
-            left: 30em;
+            font-size: 1em;
+            height: 100%;
+            width: 49%;
+            right: 0;
+            padding-left: 1em;
+            padding-top: 3em;
+
             h1 {
               padding-bottom: 1em;
             }
@@ -278,17 +304,52 @@ a:hover {
     .scene {
       .inner {
         .first {
+          background: white;
           img {
             position: absolute;
-            top: 10em;
+            top: 2em;
             left: 3em;
-            width: 30em;
+            width: 35em;
             height: 8em;
           }
           .info {
             position: absolute;
-            top: 18em;
+            color: #444444;
+            top: 10em;
             left: 20em;
+            border: solid 2px lightgrey;
+            border-radius: 5px;
+            padding: 1em;
+          }
+        }
+        .second {
+          .course {
+            padding: 1em;
+            h2 {
+              color: #111111;
+            }
+            p {
+              color: #222222;
+            }
+            ul {
+              color: #333333;
+            }
+          }
+          .left {
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            background: blanchedalmond;
+          }
+          .right {
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            right: 0;
+            background: white;
+            .three{
+              margin-top: 7em;
+            }
           }
         }
       }

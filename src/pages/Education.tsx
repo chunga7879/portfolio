@@ -25,7 +25,7 @@ export default function Education() {
             <div className="scene">
                 <img src={home1} alt="computer" className="back" />
                 {page == 0 &&  <FirstScene />}
-                {/*{page == 1 &&  <SecondScene />}*/}
+                {page == 1 &&  <SecondScene />}
                 {/*{page == 2 &&  <ThirdScene />}*/}
                 {/*{page == 3 &&  <FourthScene />}*/}
                 <div className="icons">
@@ -45,8 +45,8 @@ function FirstScene() {
             <div className="subScene first">
                 <img src={UBC_Logo} alt="ubc logo image"/>
                 <div className="info">
-                    <h1>Major: Computer Science in BSc</h1>
-                    <h1>Graduation: Expected May 2023</h1>
+                    <h1>Computer Science in BSc</h1>
+                    <h1>Sept 2019 ~ Expected May 2023</h1>
                     <h1>GPA: 4.30/4.33</h1>
                 </div>
             </div>
@@ -58,25 +58,36 @@ function SecondScene() {
     return (
         <div className="inner">
             <div className="subScene second">
-                <div className="course one">
-                    <h2>CPSC 310/ CPSC 410</h2>
-                    <p>Contents: Design, Construct and Validate Software Systems</p>
-                    <p>Implementing several software systems/projects</p>
-                    <ul>
-                        <li>Read/Delete/List/Query UBC courses and rooms</li>
-                        <li>DSL to make GIF Animation</li>
-                        <li>Program Analysis for run time errors and possible input values</li>
-                    </ul>
+                <div className="left">
+                    <div className="course one">
+                        <h2>CPSC 310(A+) CPSC 410(A)</h2>
+                        <p>Contents: Design, Construct and Validate Software Systems</p>
+                        <ul className="details">
+                            <li>Read/Delete/List/Query UBC courses and rooms</li>
+                            <li>DSL to make GIF Animation</li>
+                            <li>Program Analysis for run time errors and possible input values</li>
+                        </ul>
+                    </div>
+                    <div className="course two">
+                        <h2>CPSC 322(A) CPSC 422(A)</h2>
+                        <p>Contents: Principles and Applications of artificial intelligence</p>
+                        <ul className="details">
+                            <li>Algorithms for problem-solving and planning (Representation & Reasoning)</li>
+                            <li>NLP understanding</li>
+                            <li>Implementation of intelligent computational systems</li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="course two">
-                    <h2>CPSC 322/ CPSC 422</h2>
-                    <p>Contents: </p>
-                    <p></p>
-                </div>
-                <div className="course three">
-                    <h2>CPSC 304/ CPSC 404</h2>
-                    <p>Contents: </p>
-                    <p></p>
+                <div className="right">
+                    <div className="course three">
+                        <h2>CPSC 304(A+) CPSC 404(CIP)</h2>
+                        <p>Contents: Database system and Physical database design </p>
+                        <ul className="details">
+                            <li>Design ER Models and PHP website using sql queries for TV programs</li>
+                            <li>Learn how physical database work (how disk works)</li>
+                            <li>Finding query optimization and Managing concurrency/recovery</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

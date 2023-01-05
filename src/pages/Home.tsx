@@ -7,7 +7,6 @@ import React from "../images/React.png";
 import CSS from "../images/CSS.png";
 import HTML from "../images/HTML.png";
 import MySQL from "../images/MySQL.png";
-import NodeJS from "../images/NodeJS.png";
 import OpenGL from "../images/OpenGL.png";
 import Python from "../images/Python.png";
 import Unity from "../images/Unity.png";
@@ -70,6 +69,10 @@ function FirstScene() {
 }
 
 function SecondScene() {
+    const Move = () => {
+        window.open('https://github.com/chunga7879');
+    }
+
     return (
         <div className="inner">
             <div className="subScene second">

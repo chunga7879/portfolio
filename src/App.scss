@@ -6,9 +6,26 @@ html.full body {
 }
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+  z-index: 100;
+  &:hover {
+    color: #e5e5e5;
+  }
 }
+
+button {
+  outline: none;
+  border-width: thin;
+  border-radius: 10px;
+  font-size: 2em;
+  background-color: black;
+
+  &:focus, &:active {
+    background-color: white;
+  }
+}
+
 
 h1 {
   font-size: 2em;
@@ -22,8 +39,8 @@ h3 {
   font-size: 1em;
 }
 
-a:hover {
-  font-weight: bold;
+h4 {
+  font-size: 0.8em;
 }
 
 .App {
@@ -68,8 +85,12 @@ a:hover {
           font-size: 0.8rem;
           .each {
             color: white;
-            text-decoration: none;
+            font-weight: bold;
             padding-left: 5rem;
+
+            &:hover {
+              color: #e5e5e5;
+            }
           }
         }
       }
@@ -87,7 +108,7 @@ a:hover {
       justify-content: center;
       z-index: 100;
       bottom: 39rem;
-      color: white;
+      color: #555555;
       margin-top: 0.4em;
       font-size: 4em;
       .icon1 {
@@ -123,6 +144,7 @@ a:hover {
         position: relative;
         width: 100%;
         height: 100%;
+        z-index: 10;
       }
     }
   }
@@ -154,7 +176,7 @@ a:hover {
         .first {
           width: 100%;
           height: 100%;
-          background: blanchedalmond;
+          background: #DEC4FC;
         }
         .second {
           background: white;
@@ -166,10 +188,10 @@ a:hover {
             left: calc((50% - 20em) / 2);
           }
           .info {
-            background: blanchedalmond;
             position: absolute;
+            background: #e7d3fd;
             font-size: 1em;
-            height: 100%;
+            height: 90%;
             width: 49%;
             right: 0;
             padding-left: 1em;
@@ -188,6 +210,7 @@ a:hover {
     }
 
     .s1, .s2 {
+      color: #808588;
       .floating-one {
         animation-name: floating-one;
         animation-duration: 7s;
@@ -304,20 +327,20 @@ a:hover {
     .scene {
       .inner {
         .first {
-          background: white;
+          background: #f8f3fe;
           img {
             position: absolute;
-            top: 2em;
+            top: 1em;
             left: 3em;
             width: 35em;
             height: 8em;
           }
           .info {
             position: absolute;
-            color: #444444;
-            top: 10em;
+            color: #230C3B;
+            top: 11em;
             left: 20em;
-            border: solid 2px lightgrey;
+            border: solid 2px #230C3B;
             border-radius: 5px;
             padding: 1em;
           }
@@ -339,7 +362,7 @@ a:hover {
             position: absolute;
             height: 100%;
             width: 50%;
-            background: blanchedalmond;
+            background: #f8f3fe;
           }
           .right {
             position: absolute;
@@ -355,4 +378,96 @@ a:hover {
       }
     }
   }
+
+  .project {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+    .scene {
+      .inner {
+        .first, .second {
+          background: #efe3fd;
+          .info {
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            right: 0;
+
+            .basic {
+              text-align: center;
+
+              p {
+                color: #333333;
+                font-size: 0.7em;
+              }
+            }
+
+            .contents {
+              width: 95%;
+              p {
+                padding-left: 2em;
+                font-size: 0.86em;
+              }
+
+              ul {
+                li {
+                  font-size: 0.4em;
+                }
+              }
+
+              button {
+
+              }
+            }
+          }
+          .examples {
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            padding: 2em;
+
+            .video {
+              position: relative;
+              width: 90%;
+              height: auto;
+              z-index: 10;
+              top: (100% - calc(100% * 9 / 16)) / 5.5;
+
+              source {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            button {
+              position: relative;
+            }
+
+            .codes {
+              display: flex;
+              width: 5em;
+              height: 10em;
+              .code {
+                &.one {
+                  padding-right: 0.5em;
+                }
+                &.two {
+                  padding-left: 0.5em;
+                }
+              }
+            }
+            .gif {
+              padding-top: 1em;
+              width: 25.5em;
+              height: 15em;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }

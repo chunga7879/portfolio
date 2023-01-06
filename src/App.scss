@@ -397,7 +397,8 @@ h4 {
 
     .scene {
       .inner {
-        .first, .second, .third, .fourth, .fifth, .sixth, .seventh {
+        .first, .second, .third, .fourth, .fifth,
+        .sixth, .seventh, .eighth, ninth {
           background: #efe3fd;
 
           button {
@@ -508,10 +509,15 @@ h4 {
           }
         }
 
-        .seventh {
+        .seventh, .eighth, .ninth {
           .info {
-            li {
-              font-size: 0.8em;
+            &.two {
+              .contents {
+                li {
+                  padding-bottom: 0.3em;
+                  font-size: 0.8em;
+                }
+              }
             }
           }
         }

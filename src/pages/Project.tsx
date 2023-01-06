@@ -16,7 +16,7 @@ export default function Project() {
     }
 
     const onClickNext = () => {
-        if (page < 6) {
+        if (page < 8) {
             setPage(page + 1);
         }
     }
@@ -33,6 +33,9 @@ export default function Project() {
                 {page === 4 && <FifthScene />}
                 {page === 5 && <SixthScene />}
                 {page === 6 && <SeventhScene />}
+                {page === 7 && <EighthScene />}
+                {page === 8 && <NinthScene />}
+
                 <div className="icons">
                     <CiCircleChevLeft className="icon1" onClick={onClickPrev}/>
                     <CiCircleChevRight className="icon2" onClick={onClickNext} />
@@ -343,6 +346,109 @@ function SeventhScene() {
                                         <li>Filtering/Searching functionality for each column to display only certain trails</li>
                                     </ul>
                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function EighthScene() {
+    return (
+        <div className="inner">
+            <div className="subScene eighth">
+                <div className="info one">
+                    <div className="basic">
+                        <h2>Maven Auth</h2>
+                        <p className="one">JNPMedi Inc: 2022.06 ~ 2022.08</p>
+                    </div>
+                    <div className="contents">
+                        <div className="one">
+                            <h3>Description</h3>
+                            <p>
+                                It is to manage users’ information such as account information, users’ privileges, roles and organizations. It can create/update/delete users and create organizations and invite users for the organization. It provides REST API for Maven_Admin project.
+                            </p>
+                        </div>
+                        <div className="three">
+                            <h3>Skills</h3>
+                            <p>
+                                Typescript, Cyan (Backend-framework), MySQL
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="info two">
+                    <div className="contents">
+                        <div className="one">
+                            <h3>Role</h3>
+                            <p>Project Engineer</p>
+                            <ul>
+                                <li>Design Layered Architecture (schema(entity), model, service, controller) for User, User’s privilege, Role, User’s Role and Ref Audit to track audit trail.
+                                </li>
+                                <li>
+                                    Implementing Rest APIs
+                                    <ul>
+                                        <li>Get user by id/authorization</li>
+                                        <li>List users with pagination</li>
+                                        <li>Get user’s privileges by id/authorization</li>
+                                        <li>Patch privileges to users with id and list of (privilege, grant: whether to add or to remove)</li>
+                                        <li>Create a Role with unique name and privileges as optional. It creates RolePrivilege entities to manage relationship between role and privileges.</li>
+                                        <li>Delete role by role id</li>
+                                        <li>Patch name or privileges to roles. It changes a name or creates a new RolePrivilege entity or changes isDestroyed attribute for RolePrivilege entity.</li>
+                                        <li>Get user’s roles by user id/authorization</li>
+                                        <li>Patch roles to users with user id and list of (roleid, grant)</li>
+                                        <li>List of audit trails with pagination and with filtering functionality. </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function NinthScene() {
+    return (
+        <div className="inner">
+            <div className="subScene ninth">
+                <div className="info one">
+                    <div className="basic">
+                        <h2>Maven Safety</h2>
+                        <p className="one">JNPMedi Inc: 2022.08 ~ 2022.08</p>
+                    </div>
+                    <div className="contents">
+                        <div className="one">
+                            <h3>Description</h3>
+                            <p>
+                                It is to provide a website for recording all information on each subject in a clinical reserach study.
+                            </p>
+                        </div>
+                        <div className="three">
+                            <h3>Skills</h3>
+                            <p>
+                                Typescript, React.js, Cyan (Backend-framework), Flex(Frontend-framework), MySQL
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="info two">
+                    <div className="contents">
+                        <div className="one">
+                            <h3>Role</h3>
+                            <p>Project Engineer</p>
+                            <ul>
+                                <li>Refactoring to make cleaner code</li>
+                                <li>Adding some scss and small components to improve design</li>
+                                <li>Creating REST API for listing up audit trails for case captures with pagination/filtering</li>
+                                <li>Components to provide functionality to see audit trails/comments and delete/strike rows for each item</li>
+                                <li>Components to show audit trails with filtering</li>
+                                <li>Components to remove/strike items</li>
                             </ul>
                         </div>
                     </div>

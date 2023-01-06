@@ -6,22 +6,24 @@ html.full body {
 }
 
 a {
-  color: black;
   text-decoration: none;
-  z-index: 100;
-  &:hover {
-    color: #e5e5e5;
-  }
 }
 
 button {
   outline: none;
-  border-width: thin;
+  border-color: transparent;
   border-radius: 10px;
   font-size: 2em;
   background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
 
-  &:focus, &:active {
+  a {
+    padding: 1em;
+  }
+
+  &:focus, &:active, &:hover {
     background-color: white;
   }
 }
@@ -99,8 +101,8 @@ h4 {
 
   .scene {
     position: relative;
-    width: 60rem;
-    height: 50rem;
+    width: 60em;
+    height: 50em;
 
     .icons {
       position: relative;
@@ -111,11 +113,14 @@ h4 {
       color: #555555;
       margin-top: 0.4em;
       font-size: 4em;
+
       .icon1 {
-        padding-right: 1em;
+        margin-right: 1em;
+        cursor: pointer;
       }
       .icon2 {
-        padding-left: 1em;
+        margin-left: 1em;
+        cursor: pointer;
       }
     }
 
@@ -124,8 +129,8 @@ h4 {
       padding: 0;
       margin: 0;
       width: 100%;
-      top: 5rem;
-      height: 45rem;
+      top: 5em;
+      height: 45em;
       z-index: 5;
     }
 
@@ -169,8 +174,12 @@ h4 {
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     display: flex;
+
+    a:hover {
+      font-weight: bold;
+    }
     .scene {
       .inner {
         .first {
@@ -321,7 +330,7 @@ h4 {
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     display: flex;
 
     .scene {
@@ -383,18 +392,40 @@ h4 {
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     display: flex;
 
     .scene {
       .inner {
-        .first, .second {
+        .first, .second, .third, .fourth, .fifth, .sixth, .seventh {
           background: #efe3fd;
+
+          button {
+            color: white;
+            width: 7em;
+
+            &.focus, &.active {
+              color: black;
+            }
+          }
           .info {
             position: absolute;
             height: 100%;
             width: 50%;
             right: 0;
+
+            &.one {
+              left: 0;
+              background: #c94aff;
+            }
+
+            &.two {
+              padding-left: 1em;
+            }
+
+            .basic, .contents {
+              padding-left: 1em;
+            }
 
             .basic {
               text-align: center;
@@ -419,7 +450,8 @@ h4 {
               }
 
               button {
-
+                position: relative;
+                left: 3.5em;
               }
             }
           }
@@ -442,8 +474,17 @@ h4 {
               }
             }
 
-            button {
+            .button {
               position: relative;
+              display: block;
+              left: 3em;
+
+              &.one {
+                top: 2em;
+              }
+              &.two {
+                top: 2.5em;
+              }
             }
 
             .codes {
@@ -466,6 +507,16 @@ h4 {
             }
           }
         }
+
+        .seventh {
+          .info {
+            li {
+              font-size: 0.8em;
+            }
+          }
+        }
+
+
       }
     }
   }

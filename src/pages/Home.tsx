@@ -40,8 +40,8 @@ export default function Home() {
             </div>
             <div className="scene">
                 <img src={home1} alt="computer" className="back" />
-                {page == 0 &&  <FirstScene />}
-                {page == 1 &&  <SecondScene />}
+                {page === 0 &&  <FirstScene />}
+                {page === 1 &&  <SecondScene />}
                 {/*{page == 2 &&  <ThirdScene />}*/}
                 {/*{page == 3 &&  <FourthScene />}*/}
                 <div className="icons">

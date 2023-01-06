@@ -24,8 +24,8 @@ export default function Education() {
             <div className="s1"></div>
             <div className="scene">
                 <img src={home1} alt="computer" className="back" />
-                {page == 0 &&  <FirstScene />}
-                {page == 1 &&  <SecondScene />}
+                {page === 0 &&  <FirstScene />}
+                {page === 1 &&  <SecondScene />}
                 <div className="icons">
                     <CiCircleChevLeft className="icon1" onClick={onClickPrev}/>
                     <CiCircleChevRight className="icon2" onClick={onClickNext} />

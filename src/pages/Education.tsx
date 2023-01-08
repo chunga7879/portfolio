@@ -5,16 +5,16 @@ import {useState} from "react";
 import UBC_Logo from "../images/UBC_Logo.jpg";
 
 export default function Education() {
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(1);
 
     const onClickPrev = () => {
-        if (page > 0) {
+        if (page > 1) {
             setPage(page - 1);
         }
     }
 
     const onClickNext = () => {
-        if (page < 1) {
+        if (page < 2) {
             setPage(page + 1);
         }
     }
@@ -24,15 +24,14 @@ export default function Education() {
             <div className="s1"></div>
             <div className="scene">
                 <img src={home1} alt="computer" className="back" />
-                {page === 0 &&  <FirstScene />}
-                {page === 1 &&  <SecondScene />}
+                {page === 1 &&  <FirstScene />}
+                {page === 2 &&  <SecondScene />}
                 <div className="icons">
-                    <CiCircleChevLeft className="icon1" onClick={onClickPrev}/>
-                    <CiCircleChevRight className="icon2" onClick={onClickNext} />
+                    {page !== 1 && <CiCircleChevLeft className="icon1" onClick={onClickPrev}/>}
+                    {page !== 2 && <CiCircleChevRight className="icon2" onClick={onClickNext} />}
                 </div>
             </div>
             <div className="s2"></div>
-
         </div>
     );
 }

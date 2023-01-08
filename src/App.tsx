@@ -9,14 +9,14 @@ import Education from "./pages/Education";
 import Document from "./pages/Document";
 
 function App() {
-  return (
+    return (
       <BrowserRouter>
         <div className="App">
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/education" element={<Education />} />
-                <Route path="/projects" element={<Project />} />
+                <Route path="/projects/:page" element={<Project />} />
                 <Route path="/experience" element={<Experience />} />
                 <Route path="/documents" element={<Document />} />
             </Routes>

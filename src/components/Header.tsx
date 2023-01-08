@@ -14,7 +14,7 @@ export function Header() {
                         <Link to="./education" className="each">Education</Link>
                     </li>
                     <li>
-                        <Link to="./projects" className="each">Project</Link>
+                        <Link to="./projects/1" className="each">Project</Link>
                     </li>
                     <li>
                         <Link to="./experience" className="each">Experience</Link>

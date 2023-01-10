@@ -610,7 +610,27 @@ h4 {
     .scene {
       .inner {
         .subScene {
-          background: #7f00ff;
+          background: #9370DB;
+          display: flex;
+
+          .doc {
+            position: relative;
+            padding: 0 4em;
+            top: 7em;
+
+            a {
+              text-decoration: none;
+              color: black;
+              .file {
+                font-size: 10em;
+              }
+            }
+
+            h2 {
+              padding: 0 1.25em;
+            }
+
+          }
         }
       }
     }

@@ -3,6 +3,7 @@ import {CiCircleChevLeft, CiCircleChevRight} from "react-icons/ci";
 import React from "../images/React.png";
 import {useState} from "react";
 import jnpmedi from "../images/jnpmedi.jpeg";
+import QDGIS from "../images/QDGIS.jpeg";
 import {useNavigate} from "react-router-dom";
 
 export default function Experience() {
@@ -26,7 +27,7 @@ export default function Experience() {
             <div className="scene">
                 <img src={home1} alt="computer" className="back" />
                 {page === 1 &&  <FirstScene />}
-                {/*{page === 2 &&  <SecondScene />}*/}
+                {page === 2 &&  <SecondScene />}
                 <div className="icons">
                     {page !== 1 && <CiCircleChevLeft className="icon1" onClick={onClickPrev}/>}
                     {page !== 2 && <CiCircleChevRight className="icon2" onClick={onClickNext} />}
@@ -74,6 +75,36 @@ function FirstScene() {
                         <button className="button" onClick={onClickMove(9)}>Maven-Auth</button>
                         <button className="button" onClick={onClickMove(10)}>Maven-Safety</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function SecondScene() {
+    return (
+        <div className="inner">
+            <div className="subScene first">
+                <div className="left">
+                    <div className="upper">
+                        <img src={QDGIS} alt="QDGIS logo image"/>
+                        <div className="companyInfo">
+                            <h1>Qingdao Galaxy International School</h1>
+                            <p>Qingdao, China</p>
+                            <a href="https://www.linkedin.com/school/qdgis/">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div className="working">
+                        <h2>Teacher/Teaching Assistant</h2>
+                        <h3>October 2021 ~ July 2022</h3>
+                    </div>
+                </div>
+                <div className="right">
+                    <ul className="accomplishment">
+                        <li>Teaching Java programming/Biology.</li>
+                        <li>Creating class materials using power points, Word and IntelliJ</li>
+                        <li>Collaborating with other teachers to make exam questions.</li>
+                    </ul>
                 </div>
             </div>
         </div>

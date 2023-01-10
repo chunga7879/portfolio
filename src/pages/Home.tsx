@@ -69,10 +69,6 @@ function FirstScene() {
 }
 
 function SecondScene() {
-    const Move = () => {
-        window.open('https://github.com/chunga7879');
-    }
-
     return (
         <div className="inner">
             <div className="subScene second">

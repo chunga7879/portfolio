@@ -599,4 +599,21 @@ h4 {
       }
     }
   }
+
+  .document {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: scroll;
+    display: flex;
+
+    .scene {
+      .inner {
+        .subScene {
+          background: #7f00ff;
+        }
+      }
+    }
+  }
+
 }

@@ -49,8 +49,7 @@ h4 {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  overflow: scroll;
   height: 100%;
   width: 100%;
 
@@ -62,16 +61,17 @@ h4 {
     right: 0;
     left: 0;
     z-index: 100;
+    width: 100%;
     min-height: 2.5rem;
     background-color: #222021;
-    justify-content: center;
 
     .wrapper {
+      margin-left: 300px;
       display: flex;
       padding: 0 2em;
+      width: 100%;
       overflow-x : scroll;
       .logo {
-        margin-right: 2em;
         .img {
           width: 5rem;
           height: 2.5rem;
@@ -79,7 +79,7 @@ h4 {
       }
 
       .menu-wrap {
-        margin-left: 2em;
+        margin-left: 100px;
 
         padding: 0;
         .menu {
@@ -106,8 +106,9 @@ h4 {
 
   .scene {
     position: relative;
-    width: 60em;
+    width: 1050px;
     height: 50em;
+    overflow: hidden;
 
     .icons {
       position: relative;
@@ -163,25 +164,16 @@ h4 {
 
   .s1, .s2 {
     position: relative;
-    width: calc((100% - 60rem) / 2);
+    width: 200px;
     height: 100%;
     padding: 0;
     margin: 0;
   }
 
-  .s1 {
-    left: 0;
-  }
-
-  .s2 {
-    right: 0;
-  }
-
   .home {
-    width: 100%;
+    width: 1450px;
     height: 100vh;
     position: relative;
-    overflow: scroll;
     display: flex;
 
     a:hover {
@@ -270,20 +262,20 @@ h4 {
         padding: 0;
         margin: 0;
         border: 0;
-        width: 6rem;
-        height: 6rem;
+        width: 80px;
+        height: 80px;
 
         img {
           padding: 0;
           margin: 0;
-          width: 6rem;
-          height: 6rem;
+          width: 80px;
+          height: 80px;
         }
       }
 
       .one {
         top: 4em;
-        right: 8em;
+        right: 6em;
       }
 
       .two {
@@ -293,7 +285,7 @@ h4 {
 
       .three {
         top: 20em;
-        right: 8em;
+        right: 6em;
       }
 
       .four {
@@ -303,7 +295,7 @@ h4 {
 
       .five {
         top: 36em;
-        right: 8em;
+        right: 6em;
       }
 
       .six {
@@ -313,7 +305,7 @@ h4 {
 
       .seven {
         top: 150px;
-        left: 8em;
+        left: 6em;
       }
 
       .eight {
@@ -323,7 +315,7 @@ h4 {
 
       .nine {
         top: 410px;
-        left: 8em;
+        left: 6em;
       }
 
       .ten {
@@ -334,10 +326,9 @@ h4 {
   }
 
   .education {
-    width: 100%;
+    width: 1450px;
     height: 100vh;
     position: relative;
-    overflow: scroll;
     display: flex;
 
     .scene {
@@ -396,10 +387,9 @@ h4 {
   }
 
   .project {
-    width: 100%;
+    width: 1450px;
     height: 100vh;
     position: relative;
-    overflow: scroll;
     display: flex;
 
     .scene {
@@ -462,7 +452,7 @@ h4 {
             position: absolute;
             height: 100%;
             width: 50%;
-            padding: 2em;
+            padding: 1.5em;
 
             .video {
               position: relative;
@@ -480,13 +470,13 @@ h4 {
             .button {
               position: relative;
               display: block;
-              left: 3em;
+              left: 4em;
 
               &.one {
-                top: 2em;
+                top: 1.5em;
               }
               &.two {
-                top: 2.5em;
+                top: 2.0em;
               }
             }
 
@@ -536,10 +526,9 @@ h4 {
   }
 
   .experience {
-    width: 100%;
+    width: 1450px;
     height: 100vh;
     position: relative;
-    overflow: scroll;
     display: flex;
 
     .scene {
@@ -606,10 +595,9 @@ h4 {
   }
 
   .document {
-    width: 100%;
+    width: 1450px;
     height: 100vh;
     position: relative;
-    overflow: scroll;
     display: flex;
 
     .scene {
@@ -620,7 +608,7 @@ h4 {
 
           .doc {
             position: relative;
-            padding: 0 4em;
+            padding: 0 5em;
             top: 7em;
 
             a {

@@ -5,7 +5,7 @@ export function Header() {
     return (
         <header className="app-header">
             <a href="/" className="logo">
-                <img src={logo} className="img" alt="logo image" />
+                <img src={logo} className="img" alt="logo" />
             </a>
             <div className="menu-wrap">
                 <ul className="menu">

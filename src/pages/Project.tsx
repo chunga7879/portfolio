@@ -1,4 +1,3 @@
-import {useState} from "react";
 import home1 from "../images/home1.png";
 import {CiCircleChevLeft, CiCircleChevRight} from "react-icons/ci";
 import React from "../images/React.png";

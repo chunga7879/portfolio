@@ -52,7 +52,7 @@ function FirstScene() {
             <div className="subScene first">
                 <div className="left">
                     <div className="upper">
-                        <img src={jnpmedi} alt="jnpmedi logo image"/>
+                        <img src={jnpmedi} alt="jnpmedi logo"/>
                         <div className="companyInfo">
                             <h1>JNPMEDI Inc.</h1>
                             <p>Incheon, KR</p>
@@ -87,7 +87,7 @@ function SecondScene() {
             <div className="subScene first">
                 <div className="left">
                     <div className="upper">
-                        <img src={QDGIS} alt="QDGIS logo image"/>
+                        <img src={QDGIS} alt="QDGIS logo"/>
                         <div className="companyInfo">
                             <h1>Qingdao Galaxy International School</h1>
                             <p>Qingdao, China</p>

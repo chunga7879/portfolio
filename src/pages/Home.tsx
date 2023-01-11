@@ -61,7 +61,7 @@ export default function Home() {
 function FirstScene() {
     return (
         <div className="inner">
-            <img src={home2} alt="home image 2" className="subScene first"/>
+            <img src={home2} alt="home 2" className="subScene first"/>
         </div>
     )
 }
@@ -70,7 +70,7 @@ function SecondScene() {
     return (
         <div className="inner">
             <div className="subScene second">
-                <img src={chunga} className="img" alt="chunga's image" />
+                <img src={chunga} className="img" alt="chunga" />
                 <div className="info">
                     <h1>Basic Info</h1>
                     <p>Email: chunga7879@gmail.com</p>

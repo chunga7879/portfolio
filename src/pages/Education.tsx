@@ -40,7 +40,7 @@ function FirstScene() {
     return (
         <div className="inner">
             <div className="subScene first">
-                <img src={UBC_Logo} alt="ubc logo image"/>
+                <img src={UBC_Logo} alt="ubc logo"/>
                 <div className="info">
                     <h1>Computer Science in BSc</h1>
                     <h1>Sept 2019 ~ Expected May 2023</h1>

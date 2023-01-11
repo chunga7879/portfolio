@@ -87,7 +87,7 @@ h4 {
             .each {
               color: white;
               font-weight: bold;
-              padding-left: 5rem;
+              padding-left: 6rem;
 
               &:hover {
                 color: #e5e5e5;
@@ -478,8 +478,8 @@ h4 {
 
             .codes, .diagrams {
               display: flex;
-              width: 5em;
-              height: 10em;
+              width: 6em;
+              height: 11em;
               .code, .diagram {
                 &.one {
                   padding-right: 0.5em;
@@ -496,11 +496,11 @@ h4 {
             }
 
             .gif {
-              width: 25.5em;
+              width: 28em;
             }
 
             .example {
-              width: 23.5em;
+              width: 26em;
             }
           }
         }

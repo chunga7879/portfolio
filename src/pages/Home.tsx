@@ -83,36 +83,3 @@ function SecondScene() {
         </div>
     )
 }
-
-// function ThirdScene() {
-//     return (
-//         <div className="inner">
-//             <div className="intro">
-//                 <div className="one">
-//                     <h1>WHO I AM?</h1>
-//                     <p></p>
-//                 </div>
-//                 <div className="two">
-//                     <h1>HOW I WORKED?</h1>
-//                     <p></p>
-//                 </div>
-//                 <div className="three">
-//                     <h1>WHAT I AM LOOKING FORWARD?</h1>
-//                     <p></p>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
-
-// function FourthScene() {
-//     return (
-//         <div className="inner">
-//             <h1>What "ATTENTION" means?</h1>
-//             <h2>To be a person who can</h2>
-//             <p>Give Attention</p>
-//             <p>Get Attention</p>
-//             <p>To someone else</p>
-//         </div>
-//     )
-// }

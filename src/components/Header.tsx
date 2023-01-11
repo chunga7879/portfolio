@@ -1,5 +1,4 @@
 import logo from "../images/logo.png";
-import Navbar from 'react-bootstrap/Navbar';
 import {Link} from "react-router-dom";
 
 export function Header() {

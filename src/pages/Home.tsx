@@ -42,8 +42,6 @@ export default function Home() {
                 <img src={home1} alt="computer" className="back" />
                 {page === 1 &&  <FirstScene />}
                 {page === 2 &&  <SecondScene />}
-                {/*{page == 2 &&  <ThirdScene />}*/}
-                {/*{page == 3 &&  <FourthScene />}*/}
                 <div className="icons">
                     {page !== 1 && <CiCircleChevLeft className="icon1" onClick={onClickPrev}/>}
                     {page !== 2 && <CiCircleChevRight className="icon2" onClick={onClickNext} />}

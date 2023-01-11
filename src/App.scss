@@ -61,42 +61,47 @@ h4 {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     min-height: 2.5rem;
     background-color: #222021;
+    justify-content: center;
 
-    .logo {
-      position: relative;
-      left: 15rem;
-      .img {
-        width: 5rem;
-        height: 2.5rem;
+    .wrapper {
+      display: flex;
+      padding: 0 2em;
+      overflow-x : scroll;
+      .logo {
+        margin-right: 2em;
+        .img {
+          width: 5rem;
+          height: 2.5rem;
+        }
       }
-    }
 
-    .menu-wrap {
-      position: relative;
-      left: 35rem;
-      padding: 0;
-      margin: 0;
-      .menu {
-        list-style-type: none;
-        display: flex;
+      .menu-wrap {
+        margin-left: 2em;
 
-        li {
-          font-size: 0.8rem;
-          .each {
-            color: white;
-            font-weight: bold;
-            padding-left: 5rem;
+        padding: 0;
+        .menu {
+          list-style-type: none;
+          display: flex;
 
-            &:hover {
-              color: #e5e5e5;
+          li {
+            font-size: 0.8rem;
+            .each {
+              color: white;
+              font-weight: bold;
+              padding-left: 5rem;
+
+              &:hover {
+                color: #e5e5e5;
+              }
             }
           }
         }
       }
     }
+
   }
 
   .scene {

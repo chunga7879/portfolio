@@ -18,6 +18,17 @@ body {
     font-size: inherit;
 }
 
+html.noanim {
+    * {
+        transition: none !important;
+
+        &:after,
+        &:before {
+            transition: none !important;
+        }
+    }
+}
+
 html.app-hybrid,
 html.app-hybrid body {
     width: 100%;

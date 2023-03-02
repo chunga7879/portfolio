@@ -211,7 +211,7 @@ function FifthScene() {
 
 function SixthScene() {
     return (
-        <div className="subScene seventh">
+        <div className="subScene sixth">
             <div className="info one">
                 <div className="basic">
                     <h2>Portfolio Website</h2>
@@ -231,6 +231,24 @@ function SixthScene() {
                 </div>
             </div>
             <div className="info two">
+                <div className="basic">
+                    <h2>besTeam</h2>
+                    <p className="one">Individual Project: 2023.02 ~ ing</p>
+                </div>
+                <div className="contents">
+                    <div className="one">
+                        <h3>Description</h3>
+                        <p>
+                            This project creates best teams for school projects. It is essential to form a group based on the ability and interests of people. It will create a survey based on project information and survey options such as range for preference of roles and rating of ability. Using the answers of participants, this project will create teams.
+                        </p>
+                    </div>
+                    <div className="three">
+                        <h3>Skills</h3>
+                        <p> Java (Spring boot), React.js</p>
+                    </div>
+                    <button className="button one"><a href="https://github.com/chunga7879/besTeam.git">Back-End</a></button>
+                    <button className="button two"><a href="https://github.com/chunga7879/bes-t-eam.git">Front-End</a></button>
+                </div>
             </div>
         </div>
     )

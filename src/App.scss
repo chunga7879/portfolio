@@ -442,6 +442,19 @@ h4 {
                 position: relative;
                 left: 3.5em;
               }
+
+              .button {
+                position: relative;
+                display: block;
+                left: 4em;
+
+                &.one {
+                  top: 1.5em;
+                }
+                &.two {
+                  top: 2.0em;
+                }
+              }
             }
           }
           .examples {
